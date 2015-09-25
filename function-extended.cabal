@@ -1,0 +1,37 @@
+name:                   function-extended
+version:                0.1.0.0
+synopsis:               Extended Data.Function module with extra functions.
+-- description:
+homepage:               https://github.com/trskop/function-extended
+bug-reports:            https://github.com/trskop/function-extended/issues
+license:                BSD3
+license-file:           LICENSE
+author:                 Peter Trško
+maintainer:             peter.trsko@gmail.com
+copyright:              (c) 2015, Peter Trško
+category:               Data
+build-type:             Simple
+cabal-version:          >=1.10
+
+extra-source-files:     ChangeLog.md, README.md
+
+library
+  hs-source-dirs:       src
+  exposed-modules:      Data.Function.Extended
+
+  default-language:     Haskell2010
+  other-extensions:     CPP, NoImplicitPrelude
+
+  -- Module Data.Function hadn't changed much over the years.
+  build-depends:        base >=4 && <4.9, between >=0.9 && <0.11
+
+  ghc-options:          -Wall -fwarn-tabs
+
+source-repository head
+  type:                 git
+  location:             git://github.com/trskop/function-extended.git
+
+source-repository this
+  type:                 git
+  location:             git://github.com/trskop/function-extended.git
+  tag:                  0.1.0.0
